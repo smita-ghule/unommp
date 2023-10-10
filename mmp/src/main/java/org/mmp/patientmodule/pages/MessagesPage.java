@@ -18,7 +18,7 @@ public class MessagesPage {
 	{
 		driver.findElement(By.id("subject")).sendKeys(reason);
 		driver.findElement(By.id("message")).sendKeys(subject);
-		driver.findElement(By.xpath("//Input[@value='send']")).click();
+		driver.findElement(By.xpath("//input[@value='send']")).click();
 		MMPLibrary mmplibrary = new MMPLibrary(driver);
 		String text= mmplibrary.handleAlert();
 		
