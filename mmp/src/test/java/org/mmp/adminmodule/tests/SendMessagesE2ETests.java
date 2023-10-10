@@ -47,7 +47,7 @@ public class SendMessagesE2ETests extends BaseClass {
 		
 		mmpLib.launchApplication(prop.getProperty("adminURL"));
 		org.mmp.adminmodule.pages.LoginPage adminLogin = new org.mmp.adminmodule.pages.LoginPage(driver);
-		adminLogin.login(prop.getProperty("adminUserName"),prop.getProperty("adminPassword"));
+		adminLogin.login(prop.getProperty("adminUsername"),prop.getProperty("adminPassword"));
 		 org.mmp.patientmodule.pages.MessagesPage adminMessages= new  org.mmp.patientmodule.pages.MessagesPage(driver);
 		 HashMap <String,String> actualHMap= adminMessages.fetchMessagesDetails();//4 value
 		sa.assertEquals(expectedHMap,actualHMap);
