@@ -15,7 +15,7 @@ public class SendMessagesE2ETests extends BaseClass {
 	
 
 	@Test
-	public void validateEditFName()
+	public void validateSendMessages()
 	{
 
 		MMPLibrary mmpLib = new MMPLibrary(driver);
