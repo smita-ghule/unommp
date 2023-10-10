@@ -15,7 +15,7 @@ public class SendMessagesE2ETests extends BaseClass {
 	
 
 	@Test
-	public void validateEditFName()
+	public void validateSendMessages()
 	{
 
 		MMPLibrary mmpLib = new MMPLibrary(driver);
@@ -28,6 +28,7 @@ public class SendMessagesE2ETests extends BaseClass {
 		String subject="To meet doctor Charlie";
 		String actual=patientMessages.sendMessages(reason,subject);
 		String expected="Message Successfuly sent";
+		
 		mmpLib.navigation("Profile");
 	
 		EditProfilePage editprofilepage=new EditProfilePage(driver);
