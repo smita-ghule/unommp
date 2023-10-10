@@ -27,7 +27,7 @@ public class SendMessagesE2ETests extends BaseClass {
 		String reason="Having Cold";
 		String subject="To meet doctor Charlie";
 		String actual=patientMessages.sendMessages(reason,subject);
-		String expected="Message Successfully sent";
+		String expected="Messages Successfully sent";
 		mmpLib.navigation("Profile");
 	
 		EditProfilePage editprofilepage=new EditProfilePage(driver);
