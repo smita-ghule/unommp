@@ -21,7 +21,7 @@ public class SendMessagesE2ETests extends BaseClass {
 		MMPLibrary mmpLib = new MMPLibrary(driver);
 		mmpLib.launchApplication(prop.getProperty("patientURL"));
 		LoginPage patientLogin = new LoginPage(driver);
-		 patientLogin.login(prop.getProperty("patientUserName"),prop.getProperty("patientPassword"));
+		 patientLogin.login(prop.getProperty("patientUsername"),prop.getProperty("patientPassword"));
 		mmpLib.navigation("Messages");
 		MessagesPage patientMessages= new MessagesPage(driver);
 		String reason="Having Cold";
