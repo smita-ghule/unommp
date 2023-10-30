@@ -1,6 +1,5 @@
 package org.mmp.patientmodule.pages;
 import java.util.HashMap;
-
 import org.iitworkforce.healthcare.mmp.MMPLibrary;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
