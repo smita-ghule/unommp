@@ -47,6 +47,17 @@ public class AppLibrary {
 			return str +upperCaseCh+lowerCaseCh+"";
 	}
 	
+	public static String randomInteger() {
+		Random rand = new Random();
+		String str = "";
+		int value = 48+rand.nextInt(2);
+		char digit1 = (char)value;
+
+		value = 48+rand.nextInt(10);
+		char digit2 = (char)value;
+
+		return str+digit1+digit2;
+	}	
 	
 	
 	public static String[][] readXLSX(String fileName) throws IOException
@@ -73,4 +84,5 @@ public class AppLibrary {
 		return inputData;
 		
 	}
+	
 }
